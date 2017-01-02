@@ -68,6 +68,21 @@ body {
 	margin-top: 25px;
 }
 
+#posts .body {
+	margin-top: 15px;
+}
+
+#posts h3 {
+	color:#2973f2;
+	margin-top: 10px;
+}
+
+#posts .notes {
+	font-family: monospace;
+	white-space: pre;
+	margin-top: 10px;
+}
+
 #avatar {
 	display: inline-block;
 	width: 80px;

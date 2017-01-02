@@ -34,16 +34,13 @@
           		</ul>
 			</nav>
 			<h2>Un Podcast sobre programación y tecnología. <strong>Libre de humo.</strong></h2>
-			<h2>De la mano de <a target="_blank" href="#">@esacrosa</a> y <a target="_blank" href="#">@fernandezpablo</a></h2>
+			<h2>De la mano de <a target="_blank" href="https://twitter.com/esacrosa">@esacrosa</a> y <a target="_blank" href="https://twitter.com/fernandezpablo">@fernandezpablo</a></h2>
 		</header>
 
 		<section id="posts">
-			{% for post in posts %}
-			<li> 
-				<b><a href='{{ ROOT_URL }}/{{ post.path }}'>{{ post.title }}</a></b>
-				by {{ post.author }} at {{ post.date|date:"F j Y" }}<br>
-				{{ post.body }}
-			</li>
+			{% for post in posts %} 
+				<div class="title"><strong>{{ post.date|date:"d-m-Y" }}</strong> - <a href='{{ ROOT_URL }}/{{ post.path }}'>{{ post.title }}</a></div>
+				<div class="body">{{ post.body }}</div>
 			{% endfor %}
 		</section>
 	</section>
