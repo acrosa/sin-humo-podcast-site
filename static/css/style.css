@@ -73,8 +73,9 @@ body {
 }
 
 #posts h3 {
-	color:#2973f2;
-	margin-top: 10px;
+	color: #444;
+	font-size: 25px;
+	margin-top: 20px;
 }
 
 #posts .notes {
