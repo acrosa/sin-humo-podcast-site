@@ -3,12 +3,49 @@
 
 	<section id="wrapper">
 		<header id="header">
-			<img id="avatar" class="2x" src="{% static '/images/logo.jpg' %}"/>
+			<!--<img id="avatar" class="2x" src="{% static '/images/logo.jpg' %}"/>-->
 			<h1>{% block title %}Sin Humo{% endblock title %}</h1>
-			<h2>Un Podcast sobre programación y tecnología libre de humo..</h2>
+			<nav>
+				<ul>
+            		<li>
+						<a title="listen in itunes" target="_blank" href="#">
+							<span class="fa-stack fa-2x">
+								<i class="fa fa-square-o fa-stack-2x"></i>
+								<i class="fa fa-apple fa-stack-1x"></i>
+							</span>
+						</a>
+					</li>
+            		<li>
+						<a title="grab rss feed" target="_blank" href="#">
+							<span class="fa-stack fa-2x">
+								<i class="fa fa-square-o fa-stack-2x"></i>
+								<i class="fa fa-rss fa-stack-1x"></i>
+							</span>
+						</a>
+					</li>
+            		<li>
+						<a title="follow us at twitter" target="_blank" href="https://twitter.com/sinhumopodcast">
+							<span class="fa-stack fa-2x">
+								<i class="fa fa-square-o fa-stack-2x"></i>
+								<i class="fa fa-twitter fa-stack-1x"></i>
+							</span>
+						</a>
+					</li>
+          		</ul>
+			</nav>
+			<h2>Un Podcast sobre programación y tecnología. <strong>Libre de humo.</strong></h2>
+			<h2>De la mano de <a target="_blank" href="#">@esacrosa</a> y <a target="_blank" href="#">@fernandezpablo</a></h2>
 		</header>
 
-		<p><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/22297335&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></p>
+		<section id="posts">
+			{% for post in posts %}
+			<li> 
+				<b><a href='{{ ROOT_URL }}/{{ post.path }}'>{{ post.title }}</a></b>
+				by {{ post.author }} at {{ post.date|date:"F j Y" }}<br>
+				{{ post.body }}
+			</li>
+			{% endfor %}
+		</section>
 	</section>
 
 {% endblock content %}
