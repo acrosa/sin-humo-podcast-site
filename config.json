@@ -1,0 +1,6 @@
+{
+    "aws-access-key": "AKIAJUEBUMYULZXCXWDA",
+    "aws-bucket-name": "sin-humo-podcast-site",
+    "aws-bucket-website": "sin-humo-podcast-site.s3-website-us-east-1.amazonaws.com",
+    "port": 8966
+}
