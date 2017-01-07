@@ -1,0 +1,8 @@
+- Felicitaciones a @impronunciable, ganador del quiz del ep01.
+- CloudFare, problemas con leap second <link> (gracias @PabloVerano).
+- Ticket de golang para dar acceso al reloj monotónico <link>.
+- Grumpy: runtime de go para python.
+- Hack: lenguaje de Facebook basado en PHP.
+- Polémica en el /var de sysarmy
+- Nuevas medidas del BCRA para exportadores de software http://www.iprofesional.com/notas/243721-El-BCRA-suma-varias-medidas-para-apuntalar-el-precio-del-dlar
+
