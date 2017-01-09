@@ -68,6 +68,10 @@ body {
 	margin-top: 25px;
 }
 
+#posts .post {
+	margin: 25px 0px;
+}
+
 #posts .body {
 	margin-top: 15px;
 }
