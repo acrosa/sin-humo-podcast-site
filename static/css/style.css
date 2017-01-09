@@ -82,10 +82,27 @@ body {
 	margin-top: 20px;
 }
 
+#posts .show-notes {
+	border: 1px solid;
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	background-color: #efefff;
+}
+#posts .show-notes.shown {
+	background-color: #ddf;
+}
+
 #posts .notes {
 	font-family: monospace;
 	white-space: pre;
 	margin-top: 10px;
+	border: 1px solid #666;
+	background-color: #EEE;
+	color: #222;
+	border-radius: 5px;
+	padding:10px;
+	display: none;
 }
 
 #avatar {
